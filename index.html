@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #ff7f27;  
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .navbar a.active {
+      background-image: linear-gradient(to left, #ffb100, #a4d34d, #47e0a9, #37e0ed, #9ad7ff);
+      color: white;
+    }
+
+    .navbar .icon {
+      display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .navbar a:not(:first-child) {display: none;}
+      .navbar a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        bottom:0;
+      }
+      .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+    }
+    /* CARD */
+    /* card */
+    .card-deck {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+    .card-deck .card {
+      margin-bottom: 15px;
+    }
+
+    @media (min-width: 576px) {
+      .card-deck {
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+      }
+      .card-deck .card {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex: 1 0 0%;
+        flex: 1 0 0%;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-right: 15px;
+        margin-bottom: 0;
+        margin-left: 15px;
+      }
+    }
+    .card {
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      /* border: 1px solid rgba(0, 0, 0, 0.125); */
+      border-radius: 0.25rem;
+    }
+
+    .card > hr {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .card-body {
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 1.25rem;
+    }
+    .gb1{
+      background-color: #ff7f27;  
+      color: #fff;
+    }
+    .bs-h1:hover,.bs-h1:hover a{
+      background-image: linear-gradient(to left, #ffb100, #a4d34d, #47e0a9, #37e0ed, #9ad7ff);
+      color:#fff!important;
+    }
+
+    </style>
+    <title>HOME | ONLINE SHOP</title>
+    </head>
+      <body>
+      <!-- NAVBAR -->
+      <div class="navbar" id="myNavbar" >
+        <a href="index.html" class="active">Home</a>
+        <a href="t-shirt.html">T-SHIRT</a>
+        <a href="bag.html">BAG</a>
+        <a href="ball.html">BALL</a>
+        <a href="gitar.html">GUITAR</a>
+        <a href="thermometer.html">THERMOMETER</a>
+        <a href="headset.html">HEADSET</a>
+        <a href="ps.html">PLAYSTATION</a>
+        <a href="gamepad.html">GAMEPAD</a>
+        <a href="jam.html">JAM</a>
+        <a href="book.html">BOOKS</a>
+        <a href="timbangan.html">TIMBANGAN</a>
+        <a href="calculator.html">CALCULATOR</a>
+       
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">HENDRY</a>
+      </div>
+
+      <!-- GAMBAR HEADER -->
+      <div>
+          <img src="img/bg1.png" alt="gambar" width="100%"> 
+      </div>
+      <!-- promo 1 -->
+      <div class="gb1" style="width: 100%; padding-top: 20px; padding-bottom: 20px;">
+          <div style="padding-left:16px" >
+              <h2 class="uppercase">SELAMAT DATANG DI HENDRI SHOP</h2>
+              <h3 class="kapital">Dapatkan promo 15% untuk semua produk hanya dalam minggu ini.</h3>
+            </div>
+      </div>
+
+      <!-- enter -->
+      <div style="height: 40px;"></div>
+      <!-- all brand -->
+      <center><h2 class="text-muted">ALL CATEGORY</h2><hr width="30%" align="center"></center> <br>
+        <div class="tepiKK text-muted">
+          <!--  -->
+            <div class="card-deck">
+                <div class="card bs-h1">
+                  <div class="card-body">
+                    <h1 style="text-align:center"><i class="fas fa-tshirt"></i> <a href="t-shirt.html" class="text-muted">T-SHIRT</a></h1>
+                  </div>
+                </div>
+                <div class="card bs-h1">
+                    <div class="card-body">
+                      <h1 style="text-align:center"><i class="fas fa-shopping-bag"></i> <a href="bag.html" class="text-muted">BIG</a></h1>
+                    </div>
+                  </div>
+                  <div class="card bs-h1">
+                      <div class="card-body">
+                        <h1 style="text-align:center"><i class="fas fa-baseball-ball"></i> <a href="ball.html" class="text-muted">BALL</a></h1>
+                      </div>
+                    </div>
+                    <div class="card bs-h1">
+                        <div class="card-body">
+                          <h1 style="text-align:center"><i class="fas fa-guitar"></i> <a href="gitar.html" class="text-muted">GUITAR</a></h1>
+                        </div>
+                      </div>
+                      </div>
+                      <!--  -->
+                      <div class="card-deck">
+                          <div class="card bs-h1">
+                            <div class="card-body">
+                              <h2 style="text-align:center"><i class="fas fa-thermometer-half"></i> <a href="thermometer.html" class="text-muted">THERMOMETER</a></h2>
+                            </div>
+                          </div>
+                          <div class="card bs-h1">
+                              <div class="card-body">
+                                <h1 style="text-align:center"><i class="fas fa-headset"></i> <a href="headset.html" class="text-muted">HEADSET</a></h1>
+                              </div>
+                            </div>
+                            <div class="card bs-h1">
+                                <div class="card-body">
+                                  <h1 style="text-align:center"><i class="fab fa-playstation"></i> <a href="ps.html" class="text-muted">PS</a></h1>
+                                </div>
+                              </div>
+                              <div class="card bs-h1">
+                                  <div class="card-body">
+                                    <h1 style="text-align:center"><i class="fas fa-gamepad"></i> <a href="gamepad.html" class="text-muted">GAMEPAD</a></h1>
+                                  </div>
+                              </div>
+                          </div> 
+                      <!--  -->
+                      <div class="card-deck">
+                          <div class="card bs-h1">
+                            <div class="card-body">
+                              <h1 style="text-align:center"><i class="far fa-clock"></i> <a href="jam.html" class="text-muted">JAM</a></h1>
+                            </div>
+                          </div>
+                          <div class="card bs-h1">
+                              <div class="card-body">
+                                <h1 style="text-align:center"><i class="fas fa-book"></i> <a href="book.html" class="text-muted">BOOK</a></h1>
+                              </div>
+                            </div>
+                            <div class="card bs-h1">
+                                <div class="card-body">
+                                  <h2 style="text-align:center"><i class="fas fa-balance-scale-left"></i> <a href="timbangan.html" class="text-muted">TIMBANGAN</a></h2>
+                                </div>
+                              </div>
+                              <div class="card bs-h1">
+                                  <div class="card-body">
+                                    <h2 style="text-align:center"><i class="fas fa-calculator"></i> <a href="calculator.html" class="text-muted">CALLCULATOR</a></h2>
+                                  </div>
+                              </div>
+                          </div>
+                     <!--  -->
+                    </div>
+              <!-- enter -->
+              <div style="height: 70px;"></div>
+
+              <!-- hendri -->
+                    <div style="background:#27e9ff; padding-top: 70px; padding-bottom: 70px;">
+                      <div class="tepiKK">
+                          <div class="card-deck">
+                              <div class="card bs1">
+                                  <img src="img/1.jpeg" alt="gambar" class="img-respon">
+                              </div>
+                              <div class="card">
+                                  <div class="card-body">
+                                    <center>
+                                        <h1>HENDRY</h1>
+                                        <h1><blockquote><q>Kamu tidak perlu menjadi luar biasa untuk memulai, tapi kamu harus memulai untuk menjadi luar biasa</q></blockquote></h1>
+                                    </center>
+                                  </div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+
+                     <!-- form -->
+                     <div style="background:#ff2781; padding-top: 70px; padding-bottom: 70px;">
+                        <div class="tepiKK">
+                                <center>
+                                  <div style="width: 50%;">
+                                    <h1 style="color: white; border-bottom: 3px solid #fff;border-left: 3px solid #fff;border-right: 3px solid #fff;">FORM</h1>
+                                  </div>
+                                  <div style="width: 80%;">
+                                     <div class="form-group">
+                                        <label for="nama" class="float-l" style="color: #fff;font-weight: bold;">NAMA :</label>
+                                        <input type="text" class="form-control">
+                                     </div>
+                                     <div class="form-group">
+                                        <label for="E-mail" class="float-l" style="color: #fff;font-weight: bold;">E-MAIL :</label>
+                                        <input type="email" class="form-control">
+                                     </div>
+                                     <div class="form-group">
+                                        <label for="pesan" class="float-l" style="color: #fff;font-weight: bold;">PESAN :</label>
+                                       <textarea name="" id="pesan" class="form-control"></textarea>
+                                     </div>
+                                    </div>
+                                </center>
+                        </div>
+                      </div>
+
+                      <!-- vidio -->
+                     <div style="background:#f0f0f0; padding-top: 70px; padding-bottom: 70px;">
+                      <div class="tepiKK">
+                          <video src="video/1.mp4" controls width="100%"></video>
+                      </div>
+                    </div>
+                    <img src="img/bg2.png" alt="gambar" width="100%">
+
+                    <!-- wa -->
+                    <center>
+                      <a href="https://api.whatsapp.com/send?phone=6285884961890"><table><td><img src="img/whatsup.png" alt="GAMBAR" width="60" height="60"></td><td style="font-size: 2rem;color: green;"><b>WHATSUP ME!</b></td></table></a>
+                    </center>
+                    <hr>
+
+                    <!-- javascript jam -->
+                    <center>
+                      <br><br>
+                      <h1><span id="jam" style="color: #27e9ff;"></span> : <span id="menit" style="color: #ffb100;"></span> : <span id="detik" style="color: #ff2781;"></span></h1>
+                        <h3 style="font-variant: small-caps;" class="text-muted">Copyright&copy;www.Hendri.com & Collabs&trade;</h3>
+                    </center>
+              <!-- enter -->
+              <div style="height: 50px;"></div>
+
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+
+      window.setTimeout("waktu()",1000);
+    function waktu() {
+        var tanggal = new Date();
+        setTimeout("waktu()",1000);
+        document.getElementById("jam").innerHTML = tanggal.getHours();
+        document.getElementById("menit").innerHTML = tanggal.getMinutes();
+        document.getElementById("detik").innerHTML = tanggal.getSeconds();
+    }
+      </script>
+
+      </body>
+      </html>
