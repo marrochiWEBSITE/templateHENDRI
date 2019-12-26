@@ -125,14 +125,31 @@
        background: #eee249;
        color: #fff;
    } 
-    
-    
+   .img-respon{
+  max-width: 100%;
+  height: auto;
+}
+.img{
+  width: 100%;
+  height: auto;
+}
+.img-respon2 {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+.kapital{
+  text-transform: uppercase;
+}
     </style>
 </head>
 <body>
     <div class="navbar" id="myNavbar" >
-        <a href="index.html" class="active">Home</a>
-        <a href="t-shirt.html">T-SHIRT</a>
+        <a href="index.html" >Home</a>
+        <a href="t-shirt.html" class="active">T-SHIRT</a>
         <a href="bag.html">BAG</a>
         <a href="ball.html">BALL</a>
         <a href="gitar.html">GUITAR</a>
@@ -151,22 +168,101 @@
       <div>
           <img src="img/bg1.png" alt="gambar" width="100%"> 
       </div>
-      <!-- promo 1 -->
-      <div class="gb1" style="width: 100%; padding-top: 20px; padding-bottom: 20px;">
-          <div style="padding-left:16px" >
-              <h2 class="uppercase">SELAMAT DATANG DI HENDRI SHOP</h2>
-              <h3 class="kapital">Dapatkan promo 15% untuk semua produk hanya dalam minggu ini.</h3>
+ <!-- promo 1 -->
+ <div class="gb1" style="width: 100%; padding-top: 20px; padding-bottom: 20px;">
+    <div style="padding-left:16px" >
+        <h2 class="uppercase">SELAMAT DATANG DI HENDRI SHOP</h2>
+        <h3 class="kapital">Dapatkan promo 15% untuk semua produk hanya dalam minggu ini.</h3>
+      </div>
+</div>
+      <div style="height: 200px;">
+          <center>
+            <br><br><br>
+            <h1>100% Dijamin Terpercaya</h1>
+          </center>
+      </div>
+
+     
+  
+
+      <!-- enter -->
+      <div style="height: 10px;"></div>
+
+      <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+                <img src="img/tshirt1.jpg" alt="gambar" style="width:100%;height:300px">
+              <center>
+                <h1 class="kapital">BALALANG</h1>
+                <h3 style="color: rgb(165, 0, 0);">120K</h3>
+              </center>
             </div>
+          </div>
+          <div class="card">
+              <div class="card-body">
+                  <img src="img/tshirt2.jpg" alt="gambar" style="width:100%;height:300px">
+                <center>
+                  <h1 class="kapital">ETOMAH</h1>
+                  <h3 style="color: rgb(165, 0, 0);">120K</h3>
+                </center>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <img src="img/tshirt3.jpg" alt="gambar" style="width:100%;height:300px">
+                  <center>
+                    <h1 class="kapital">KEMTO</h1>
+                    <h3 style="color: rgb(165, 0, 0);">120K</h3>
+                  </center>
+                </div>
+              </div>
       </div>
+
+      <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+                <img src="img/tshirt4.jpg" alt="gambar" style="width:100%;height:300px">
+              <center>
+                <h1 class="kapital">RILIHUY</h1>
+                <h3 style="color: rgb(165, 0, 0);">120K</h3>
+              </center>
+            </div>
+          </div>
+          <div class="card">
+              <div class="card-body">
+                  <img src="img/tshirt5.jpg" alt="gambar" style="width:100%;height:300px">
+                <center>
+                  <h1 class="kapital">THE KAE</h1>
+                  <h3 style="color: rgb(165, 0, 0);">120K</h3>
+                </center>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <img src="img/tshirt6.jpg" alt="gambar" style="width:100%;height:300px">
+                  <center>
+                    <h1 class="kapital">AHORA</h1>
+                    <h3 style="color: rgb(165, 0, 0);">120K</h3>
+                  </center>
+                </div>
+              </div>
+      </div>
+
       <div class="gb2" style="width: 100%; padding-top: 20px; padding-bottom: 20px;">
-        <div style="padding-left:16px" >
-      <h3 class="kapitas"> Produk kami hanya dibuat dari <br> bahan-bahan terbaik pilihan, kenyamanan Anda adalah prioritas</h3>
-      </div>
-      </div>
-
-
-      <!-- isi -->
-
+          <div style="padding-left:16px" >
+        <h3 class="kapitas"> Produk kami hanya dibuat dari <br> bahan-bahan terbaik pilihan, kenyamanan Anda adalah prioritas</h3>
+        </div>
+        </div>
       
+<script>
+ function myFunction() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+</script>
 </body>
 </html>
